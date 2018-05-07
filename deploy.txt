@@ -1,0 +1,6 @@
+#!/bin/bash
+while read oldrev newrev ref
+do
+	#only checking oit the master (or whatever branch you would like to deploy)
+	git --work-tree=DIRECTORY_TO_DEPLOY --git-dir=DIRECTORY_FROM_REPOSITORIES checkout -f
+done
